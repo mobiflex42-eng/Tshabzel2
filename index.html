@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tshabzel</title>
+  <link rel="stylesheet" href="tshabzel.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="logo" src="C:\Users\HP Laptop 15\Desktop\tshabzel\tbzl logo.jpg" alt="Tshabzel logo">
+      <div class="brand-text">
+        <h1>Tshabzel</h1>
+        <p class="tag">Unleash your inner maverick.
+
+</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>Elegance Tailored For You</h2>
+        <p>Discover our curated collection. Click a product to order instantly.</p>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section id="products" class="products">
+      <h3>Featured Products</h3>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="C:\Users\HP Laptop 15\Desktop\tshabzel\1.3.png" alt="shirt">
+          <div class="card-body">
+            <h4>Shirt</h4>
+            <p class="price">UGX 000000</p>
+            <div class="card-actions">
+              <button class="product-order" data-name="Shirt" data-price="UGX 000000">Order</button>
+              <button class="secondary add-to-cart" data-name="Shirt" data-price="UGX 000000">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="C:\Users\HP Laptop 15\Desktop\tshabzel\1.5.png" alt="Shirt">
+          <div class="card-body">
+            <h4>.</h4>
+            <p class="price">UGX 000000</p>
+            <div class="card-actions">
+              <button class="product-order" data-name="Hoodie" data-price="UGX 000000">Order</button>
+              <button class="secondary add-to-cart" data-name="Hoodie" data-price="UGX 000000">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="C:\Users\HP Laptop 15\Desktop\tshabzel\5.png" alt="shirt">
+          <div class="card-body">
+            <h4>..</h4>
+            <p class="price">UGX 000000</p>
+            <div class="card-actions">
+              <button class="product-order" data-name="Hoodie" data-price="UGX 000000">Order</button>
+              <button class="secondary add-to-cart" data-name="Hoodie" data-price="UGX 000000">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="C:\Users\HP Laptop 15\Desktop\tshabzel\pic1.1.png" alt="shirt">
+          <div class="card-body">
+            <h4>...</h4>
+            <p class="price">UGX 000000</p>
+            <div class="card-actions">
+              <button class="product-order" data-name="shirt" data-price="UGX 000000">Order</button>
+              <button class="secondary add-to-cart" data-name="shirt" data-price="UGX 000000">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="C:\Users\HP Laptop 15\Desktop\tshabzel\1.6.png" alt="Hoodie">
+          <div class="card-body">
+            <h4>Lemon drops</h4>
+            <p class="price">UGX 000000</p>
+            <div class="card-actions">
+              <button class="product-order" data-name="Hoodie" data-price="UGX 000000">Order</button>
+              <button class="secondary add-to-cart" data-name="Hoodie" data-price="UGX 000000">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="C:\Users\HP Laptop 15\Desktop\tshabzel\1.4.png" alt="shirt">
+          <div class="card-body">
+            <h4>Designer Jacket</h4>
+            <p class="price">UGX 000000</p>
+            <div class="card-actions">
+              <button class="product-order" data-name="shirt" data-price="UGX 000000">Order</button>
+              <button class="secondary add-to-cart" data-name="shirt" data-price="UGX 000000">Add to cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="intro">
+      <h2>Order</h2>
+      <p>Fill the form below and place your order. We will contact you to confirm measurements and availability.</p>
+    </section>
+
+    <form id="orderForm" class="order-form">
+      <div class="grid">
+        <label>
+          Name
+          <input type="text" id="name" name="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" id="email" name="email">
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" id="phone" name="phone" required>
+        </label>
+
+        <label>
+          Product / Item
+          <input type="text" id="product" name="product" placeholder="e.g. Hoodie, shirt..." required>
+        </label>
+
+        <label>
+          Size / Measurements
+          <input type="text" id="size" name="size" placeholder="S / M / L or "available measurements"">
+        </label>
+
+        <label>
+          Quantity
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </label>
+
+        <label class="full">
+          Address
+          <textarea id="address" name="address" rows="3" placeholder="Street, City..."></textarea>
+        </label>
+
+        <label class="full">
+          Additional preferences
+          <textarea id="notes" name="notes" rows="3" placeholder="Colors, fabric preferences, customisations..."></textarea>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button type="submit" id="orderBtn" class="primary">Order</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+
+      <p class="disclaimer">Orders will be sent to: <strong>tshabzel</strong>.</p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Tshabzel — All Rights Reserved</p>
+  </footer>
+
+  <!-- Shopping cart UI -->
+  <button id="cartToggle" class="cart-toggle" aria-label="Open cart">
+    <span class="cart-icon">🛒</span>
+    <span id="cartCount" class="cart-count">0</span>
+  </button>
+
+  <aside id="cartSidebar" class="cart-sidebar" aria-hidden="true">
+    <header class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cartClose" class="cart-close" aria-label="Close cart">✕</button>
+    </header>
+    <div id="cartItems" class="cart-items">
+      <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <footer class="cart-footer">
+      <div class="cart-controls"></div>
+
+      <div class="cart-summary">
+        <div class="summary-row"><span>Subtotal</span><strong id="cartSubtotal">UGX 0</strong></div>
+        <div class="summary-row total"><span>Total</span><strong id="cartTotal">UGX 0</strong></div>
+      </div>
+
+      <div class="cart-actions">
+        <button id="clearCart" class="secondary">Clear</button>
+        <button id="checkoutCart" class="primary">Order Cart</button>
+      </div>
+    </footer>
+  </aside>
+  <script src="tshabzel.js"></script>
+</body>
+</html>
